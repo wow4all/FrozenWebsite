@@ -8,7 +8,7 @@ class Shoutbox
 		$Limit = 10;
 		$sqlMessages = "SELECT `message`, `user`, `date` FROM ".WEBDB.".shoutbox ORDER BY `id` DESC";
 			$queryMessages = mysql_query($sqlMessages);
-		if(!$queryMessages)
+		if(!$queryMessages || DataBase::numRows($queryMessages) < 1)
 			return array();
 		else
 		{
