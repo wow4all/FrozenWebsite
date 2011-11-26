@@ -8,7 +8,7 @@
  *   Copyright             : (C) 2011 iAsfo & Frozen WoW
  *
  ***************************************************************************/
-/*
+	/*
 		Definición: HOST
 		Retorno: localhost
 		Comnetario: IP de conexión a la base de datos
@@ -51,7 +51,7 @@ class DataBase
 	static function Connection()
 	{
 
-		$setConnection = @mysql_connect(HOST, USER, PASS) or die ("<h1>Error estableciendo la conexi&oacute;n</h1><p><ul><li><b>MySQL dice:</b> '.mysql_error().'</li><li><b>MySQL n&uacute;mero de error</b>: '.mysql_errno().'</li><li><b>Configuraciones actuales:</b> <ol><b>Host: </b>".HOST."</ol><ol><b>Usuario: </b>".USER."</ol><ol><b>Contrase&ntilde;a :</b>".PASS."</ol></li><li><b>Sugerencia: </b>Compruebe su configuraci&oacute;n en el archivo ".ROOT_PATH."/Global/Config.php</li></ul></p>".Log::DBLog("Error estableciendo la conexión")."");
+		$setConnection = @mysql_connect(HOST, USER, PASS) or die ("<h1>Error estableciendo la conexi&oacute;n</h1><p><ul><li><b>MySQL dice:</b> ".mysql_error()."</li><li><b>MySQL n&uacute;mero de error</b>: ".mysql_errno()."</li><li><b>Configuraciones actuales:</b> <ol><b>Host: </b>".HOST."</ol><ol><b>Usuario: </b>".USER."</ol><ol><b>Contrase&ntilde;a :</b>".PASS."</ol></li><li><b>Sugerencia: </b>Compruebe su configuraci&oacute;n en el archivo ".ROOT_PATH."Class/Class.Database.php</li></ul></p>".Log::DBLog("Error estableciendo la conexión")."");
 		if(!$setConnection)
 			Log::DBLog("Error estableciendo la conexión, retorno falso pero el error no mató la conexión");
 		else
