@@ -1,0 +1,2 @@
+<<< Inicio del Log:
+[19-November-2011 06:45 pm] No se enviaron los datos requeridos en el archivo 'doRegister.php' 
