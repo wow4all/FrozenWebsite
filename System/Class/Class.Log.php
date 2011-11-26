@@ -18,13 +18,13 @@ class Log
 	{
 		if(strlen($text) == 0)
 		{
-			$openFile = fopen(ROOT_PATH."Logs/db_log.txt", "a");
+			$openFile = fopen(ROOT_PATH."Class/Logs/db_log.txt", "a");
 			fwrite($openFile, "\n<<< [ErrorLog]:Error de recepción de texto | Mysql no respondió");
 			fclose($openFile);
 		}
 		else
 		{
-			$openFile = fopen(ROOT_PATH."Logs/db_log.txt", "a");		
+			$openFile = fopen(ROOT_PATH."Class/Logs/db_log.txt", "a");		
 			fwrite($openFile, "\n[".date('d')."-".date('F')."-".date('Y')." ".date('h').":".date('i')." ".date('a')."] ".$text);
 			fclose($openFile);
 		}
@@ -34,13 +34,13 @@ class Log
 	{
 		if(strlen($text) == 0)
 		{
-			$openFile = fopen(ROOT_PATH."Logs/errors_log.txt", "a");
+			$openFile = fopen(ROOT_PATH."Class/Logs/errors_log.txt", "a");
 			fwrite($openFile, "\n<<< [ErrorLog]:Error de recepción de texto | El texto real no respondió a la petición");
 			fclose($openFile);
 		}
 		else
 		{
-			$openFile = fopen(ROOT_PATH."Logs/errors_log.txt", "a");
+			$openFile = fopen(ROOT_PATH."Class/Logs/errors_log.txt", "a");
 			fwrite($openFile, "\n[".date('d')."-".date('F')."-".date('Y')." ".date('h').":".date('i')." ".date('a')."] ".$text);
 			fclose($openFile);
 		}
@@ -55,7 +55,7 @@ class Log
 	{
 		if(strlen($text) == 0)
 		{
-			$openFile = fopen(ROOT_PATH."Logs/hacks_log.txt", "a");
+			$openFile = fopen(ROOT_PATH."Class/Logs/hacks_log.txt", "a");
 			fwrite($openFile, "\n<<< [ErrorLog]:Error de rececpión de texto | El texto real no respondió a la petición");
 			fclose($openFile);
 		}
@@ -67,7 +67,7 @@ class Log
 				$findIP = $_SERVER['HTTP_X_FORWARDED_FOR'];
 			$findIP = $_SERVER['REMOTE_ADDR'];
 			
-			$openFile = fopen(ROOT_PATH."Logs/hacks_log.txt", "a");
+			$openFile = fopen(ROOT_PATH."Class/Logs/hacks_log.txt", "a");
 			fwrite($openFile, "\n[".date('d')."-".date('F')."-".date('Y')." ".date('h').":".date('i')." ".date('a')."] [IP: ".$findIP."] [Acceso Al Archivo: ".$file."] ".$text);
 			fclose($openFile);
 		}
