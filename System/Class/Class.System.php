@@ -4,7 +4,7 @@
  *                            -------------------
  *   Proyecto              : FrozenSocial
  *   Inicio                : Septiembre 28, 2011
- *   Última modificación   : Noviembre 09, 2011
+ *   Última modificación   : Noviembre 26, 2011
  *   Copyright             : (C) 2011 iAsfo & Frozen WoW
  *
  ***************************************************************************/
@@ -101,7 +101,7 @@ class System
 		$sqlCharacters = "SELECT `guid`,`name`,`race`,`class`,`gender`,`level`, `online` FROM ".CHARDB.".characters ORDER BY `guid` DESC";
 			$queryCharacters = mysql_query($sqlCharacters);
 		
-		if(!$queryCharacters)
+		if(!$queryCharacters || DataBase::numRows($queryCharacters) < 1)
 			return array();
 		else
 		{
@@ -126,7 +126,7 @@ class System
 		$sqlNews = "SELECT `id`, `subject`, `body` FROM ".WEBDB.".news ORDER BY `id` DESC";
 			$queryNews = mysql_query($sqlNews);
 		
-		if(!$queryNews)
+		if(!$queryNews || DataBase::numRows($queryNews) < 1)
 			return array();
 		else
 		{
@@ -180,21 +180,21 @@ class System
 		{
 			$sqlTotalPosts = "SELECT `id_topic` FROM ".WEBDB.".foro_messages ORDER BY `id_topic` DESC LIMIT 1";
 				$queryTotalPosts = mysql_query($sqlTotalPosts);
-					$totalPosts = mysql_fetch_array($queryTotalPosts);
+					$totalPosts = @mysql_fetch_array($queryTotalPosts);
 						return $totalPosts['id_topic'];
 		}
 		elseif($type == 1)
 		{
 			$sqlTotalForumMessages = "SELECT `id_msg` FROM ".WEBDB.".foro_messages ORDER BY `id_msg` DESC LIMIT 1";
 				$queryTotalForumMessages = mysql_query($sqlTotalForumMessages);
-					$totalMessages = mysql_fetch_array($queryTotalForumMessages);
+					$totalMessages = @mysql_fetch_array($queryTotalForumMessages);
 						return $totalMessages['id_msg'];
 		}
 		else
 		{
 			$sqlTotalForumUsers = "SELECT `id_member` FROM ".WEBDB.".foro_members ORDER BY `id_member` DESC LIMIT 1";
 				$queryTotalForumUsers = mysql_query($sqlTotalForumUsers);
-					$totalUsers = mysql_fetch_array($queryTotalForumUsers);
+					$totalUsers = @mysql_fetch_array($queryTotalForumUsers);
 						return $totalUsers['id_member'];
 		}
 	}
