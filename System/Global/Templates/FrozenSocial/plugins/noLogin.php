@@ -4,7 +4,7 @@
  *                            -------------------
  *   Proyecto              : FrozenSocial
  *   Inicio                : Septiembre 28, 2011
- *   Última modificación   : Noviembre 09, 2011
+ *   Última modificación   : Noviembre 26, 2011
  *   Copyright             : (C) 2011 iAsfo & Frozen WoW
  *
  ***************************************************************************/
@@ -181,7 +181,7 @@
         <div class="box7 title1">
             <div class="rt-block">
 				<div class="rt-module-surround">
-					<div class="module-title-surround"><div class="module-title"><h2 class="title">Bienvenido a Frozen Gaming</h2></div></div>
+					<div class="module-title-surround"><div class="module-title"><h2 class="title">Bienvenido a <?php echo SERVER_NAME; ?></h2></div></div>
 	                	<div class="rt-module-inner">
 							<div class="module-content">
 								<div class="jomsocial-box">
@@ -190,14 +190,7 @@
 											<img width="185" height="60" alt="image" src="<?php echo URL_PATH; ?>/images/stories/demo/general/ext-jomsocial.png" />
 										</a><br />
 								</div>
-								<b>Frozen Gaming</b> es un servidor privado del famoso MMORPG World of Warcraft (pr&oacute;ximamente m&aacute;s juegos). Contamos con un gran sistema general que permite la estabilidad y calidad
-									que se pueda ofrecer utilizando un emulador privado, una base de datos privada y una web propia. 
-									<br /><br />Con una conexi&oacute;n de 100mbps de subida, estable nos permite que el servidor jam&aacute;s se desconecte por razones de interconexiones con el servidor. Adem&aacute;s su rendimiento del servidor utilizando 4 Gb RAM y un procesador
-									de 2x2.2GHz ofrecido por la compa&ntilde;&iacute;a Strato nos permiten que el sistema soporte de forma continua sin generar lag hasta 1,000 jugadores conectados simultaneamente.
-									<br /><br />El equipo de desarrolladores del emulador es un equipo profesional, que a su ves desarrollan la base de datos y con continuas reparaciones que se hacen notar en el servidor
-									y que hacen que la experiencia mejore poco a poco.<br /><br />
-									As&iacute; mismo contamos con un equipo de Staff altamente calificado que ayudar&aacute; a resolver cualquier problema 'in-game'.<br /><br />
-									<b>&iquest;Qu&eacute; esperas para unirte?</b>
+								<b><?php echo SERVER_NAME; ?></b> <?php echo DESCRIPTION; ?>
 							</div>
 					</div>
 				</div>
@@ -217,12 +210,12 @@
 				<div class="rt-module-inner">
 					<div class="module-content">
 						<ul class="bullet-check">
-							<li><strong>Emulador:</strong> MythCore v12.</li>
-							<li><strong>Base de Datos:</strong> MDB.</li>
-							<li><strong>Web:</strong> FrozenCMS (Tachyon theme)</li>
-							<li><strong>Reino:</strong> Zet'Ghor</li>
-							<li><strong>Rates:</strong> x12</li>
-							<li><strong>Tipo:</strong> PvP/Blizzlike</li>
+							<li><strong>Emulador:</strong> <?php echo CORE_NAME; ?></li>
+							<li><strong>Base de Datos:</strong> <?php echo DATABASE_NAME; ?>.</li>
+							<li><strong>Web:</strong> FrozenWebsite <?php /*No modificar esta parte*/?></li>
+							<li><strong>Reino:</strong> <?php echo REALM_NAME; ?></li>
+							<li><strong>Rates:</strong> x<?php echo GENERAL_RATES; ?></li>
+							<li><strong>Tipo:</strong> <?php echo SERVER_TYPE; ?></li>
 						</ul>
 					<a href="/informacion-reino/" class="readon"><span>Leer m&aacute;s</span></a>							
 						<div class="clear"></div>
