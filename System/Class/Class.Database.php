@@ -19,13 +19,13 @@
 		Retorno: root
 		Comentario: Usuario de conexión a la base de datos
 	*/
-	DEFINE("USER", "server");
+	DEFINE("USER", "root");
 	/*
 		Definición: PASS
-		Retorno: 4sf0rulz123
+		Retorno: default
 		Comentario: Contraseña de la base de datos
 	*/
-	DEFINE("PASS", "verga");
+	DEFINE("PASS", "default");
 	/*
 		Definición: WEBDB
 		Retorno: webdb
