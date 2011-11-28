@@ -3,6 +3,6 @@
 {* Archivo de cabecera de página | Esta inicia en <body> y termina en </header>*}
 	{include file='head.tpl'}
 {* Aquí deberán ir todos los contenidos generales *}
-	{* No disponible aún *}
+	<p>Cuerpo de la p&aacute;gina</p>
 {* Archivo de pie de página | Esta inicia en <footer> y termina en </html> *}
 	{include file='footer.tpl'}

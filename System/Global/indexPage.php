@@ -8,5 +8,6 @@
  *   Copyright             : (C) 2011 iAsfo & Frozen WoW
  *
  ***************************************************************************/
-	
+	$Smarty -> assign('site_title', SITE_NAME);
+	$Smarty -> display('index.tpl');
 ?>
