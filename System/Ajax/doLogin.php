@@ -31,6 +31,7 @@
 	else
 	{
 		Log::ErrorLog("No se enviaron los datos requeridos en el archivo 'doLogin.php' ");
+		Log::HackLog("Acceso directo al archivo 'doLogin.php', esto puede ser un error, pero se almacena por seguridad", 'doLogin.php');
 		echo "errorLogin";
 		return false;
 	}

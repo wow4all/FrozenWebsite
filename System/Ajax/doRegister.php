@@ -1,9 +1,17 @@
 <?php
-	
+/***************************************************************************
+ *   Archivo:                     doLogin.php
+ *                            -------------------
+ *   Proyecto              : FrozenSocial
+ *   Inicio                : Septiembre 28, 2011
+ *   Última modificación   : Noviembre 28, 2011
+ *   Copyright             : (C) 2011 iAsfo & Frozen WoW
+ *
+ ***************************************************************************/
 	require "../Class/Class.Register.php";
 	require "../Class/Class.Log.php";
 	require "../Class/Class.Database.php";
-	
+	//Se requiere adicional una conexión generada ya que la información se introduce por medio de AJAX y no es cargada directamente al sistema.
 	DataBase::Connection();
 
 	if(isset($_POST['username']) 
@@ -37,6 +45,7 @@
 	else
 	{
 		Log::ErrorLog("No se enviaron los datos requeridos en el archivo 'doRegister.php' ");
+		Log::HackLog("Acceso directo al archivo 'doLogin.php', esto puede ser un error, pero se almacena por seguridad", 'doRegister.php');
 		echo "Error";
 		return false;
 	}
