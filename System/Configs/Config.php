@@ -110,5 +110,5 @@
 		Comentario: Descripción general del servidor
 	*/
 							//*
-	DEFINE('DESCRIPTION', 'Servidor privado del famoso MMORPG World of Warcraft . Contamos con un gran sistema general que permite la estabilidad y calidad');
+	DEFINE('DESCRIPTION', 'Servidor privado del famoso MMORPG World of Warcraft.');
 ?>
