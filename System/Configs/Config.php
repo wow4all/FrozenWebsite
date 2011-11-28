@@ -14,6 +14,43 @@
 		*El template será adaptado por medio de SMARTY en un futuro
 */
 	/*
+		Definición: HOST
+		Retorno: localhost
+		Comnetario: IP de conexión a la base de datos
+	*/
+	DEFINE("HOST", "localhost");
+	/*
+		Definición: USER
+		Retorno: root
+		Comentario: Usuario de conexión a la base de datos
+	*/
+	DEFINE("USER", "root");
+	/*
+		Definición: PASS
+		Retorno: default
+		Comentario: Contraseña de la base de datos
+	*/
+	DEFINE("PASS", "default");
+	/*
+		Definición: WEBDB
+		Retorno: webdb
+		Comentario: Base de datos con contenidos de la web
+	*/
+	DEFINE("WEBDB", "webdb");
+	/*
+		Definición: AUTH
+		Retorno: auth
+		Comentario: Base de datos con contenidos de cuenta
+	*/
+	DEFINE("AUTHDB", "auth");
+	/*
+		Definición: CHARDB
+		Retorno: characters
+		Comentario: Base de datos con contenidos de personajes
+	*/
+	DEFINE("CHARDB", "characters");
+ 
+	/*
 		Definición: TEMPLATE
 		Retorno: FrozenSocial
 		Comentario: Nombre del template en uso.

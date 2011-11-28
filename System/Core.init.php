@@ -20,7 +20,11 @@
 		/*----------------------------------
 		*	Carga de definiciones y configuraciones
 		*----------------------------------*/
-		require 'Global/Config.php';
+		require 'Configs/Config.php';
+		DEFINE('SMARTY_DIR', ROOT_PATH.'Smarty/');
+		if(file_exists(SMARTY_DIR.'Smarty.class.php'))
+			require SMARTY_DIR.'Smarty.class.php';
+		$Smarty = new Smarty();
 		//---//
 		require 'Class/Class.Log.php';
 		require 'Class/Class.Database.php';

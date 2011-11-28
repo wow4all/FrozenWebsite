@@ -8,43 +8,7 @@
  *   Copyright             : (C) 2011 iAsfo & Frozen WoW
  *
  ***************************************************************************/
-	/*
-		Definición: HOST
-		Retorno: localhost
-		Comnetario: IP de conexión a la base de datos
-	*/
-	DEFINE("HOST", "localhost");
-	/*
-		Definición: USER
-		Retorno: root
-		Comentario: Usuario de conexión a la base de datos
-	*/
-	DEFINE("USER", "root");
-	/*
-		Definición: PASS
-		Retorno: default
-		Comentario: Contraseña de la base de datos
-	*/
-	DEFINE("PASS", "default");
-	/*
-		Definición: WEBDB
-		Retorno: webdb
-		Comentario: Base de datos con contenidos de la web
-	*/
-	DEFINE("WEBDB", "webdb");
-	/*
-		Definición: AUTH
-		Retorno: auth
-		Comentario: Base de datos con contenidos de cuenta
-	*/
-	DEFINE("AUTHDB", "auth");
-	/*
-		Definición: CHARDB
-		Retorno: characters
-		Comentario: Base de datos con contenidos de personajes
-	*/
-	DEFINE("CHARDB", "characters");
- 
+	
 class DataBase
 {
 	

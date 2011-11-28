@@ -37,44 +37,9 @@
 		header('Location: /registro/2/');
 	}
 	/*------------------------------------------------------
-	*	Archivo de cabecera que incluye toda la información
-	*	desde:
-	*		<!DOCTYPE html>
-	*	hasta:
-	*		</head>
+	*	Archivo de carga inicial de archivos del sistema
+	*	de templates 
 	*-------------------------------------------------------*/
-	require 'Global/Templates/FrozenSocial/global/header.php';
-	/*------------------------------------------------------
-	*	Si la definición FROZEN_ACTIVE es true significa
-	*	que la página está activa, de lo contrario, está
-	*	en mantenimiento.
-	*	Definición en: [ROOT]/index.php
-	*------------------------------------------------------*/
-	if(FROZEN_ACTIVE == true)
-	{
-		/*------------------------------------------------------
-		*	Archivo que debe ir en toda la sección superior
-		*	desde:
-		*		<body>
-		*	hasta:
-		*		</header>
-		*------------------------------------------------------*/
-		require 'Global/Templates/FrozenSocial/head.php';
-		require 'Global/Templates/FrozenSocial/index.php';
-	}
-	else
-	/*------------------------------------------------------
-	*	Si FROZEN_ACTIVE es falso, significa que está
-	*	en mantenimiento la página
-	*	Definición en: [ROOT]/index.php
-	*------------------------------------------------------*/
-		require 'Global/Templates/FrozenSocial/global/mantenimiento.php';
-	/*------------------------------------------------------
-	*	Archivo de pie de página
-	*	Desde:
-	*		Véase el archivo para conocer inicio.
-	*	Hasta:
-	*		</html>
-	*------------------------------------------------------*/
-	require 'Global/Templates/FrozenSocial/global/footer.php';
+	require 'Global/Main.php';
+
 ?>
