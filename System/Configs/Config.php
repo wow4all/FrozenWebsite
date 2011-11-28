@@ -61,7 +61,7 @@
 		Retorno: http://wow-frozen.servegame.com/System/Global/Templates/FrozenSocial
 		Comentario: URL completa para el template (a excepción del nombre, este se toma de la definición TEMPLATE)
 	*/
-	DEFINE('URL_PATH', 'http://wow-frozen.servegame.com/System/Global/Templates/'.TEMPLATE);
+	DEFINE('URL_PATH', 'http://'.$_SERVER['HTTP_HOST'].'/System/Global/Templates/'.TEMPLATE);
 	/*
 		Definición: SITE_NAME
 		Retorno: Frozen WoW | Servidor Privado de World of Warcraft
