@@ -1,14 +1,3 @@
-<?php
-/***************************************************************************
- *   Archivo:                   header.php
- *                            -------------------
- *   Proyecto              : FrozenSocial
- *   Inicio                : Septiembre 28, 2011
- *   Última modificación   : Noviembre 07, 2011
- *   Copyright             : (C) 2011 iAsfo & Frozen WoW
- *
- ***************************************************************************/
-?>
 <!DOCTYPE html>
 <html lang="es-MX">
 

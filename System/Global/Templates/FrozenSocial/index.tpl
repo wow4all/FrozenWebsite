@@ -1,1 +1,1 @@
-{$prueba}
+{include file='Global/header.php'}
