@@ -1,1 +1,1 @@
-{include file='Global/header.php'}
+{include file='header.tpl'}
