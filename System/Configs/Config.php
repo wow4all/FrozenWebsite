@@ -110,12 +110,5 @@
 		Comentario: Descripción general del servidor
 	*/
 							//*
-	DEFINE('DESCRIPTION', 'Servidor privado del famoso MMORPG World of Warcraft . Contamos con un gran sistema general que permite la estabilidad y calidad
-									que se pueda ofrecer utilizando un emulador privado, una base de datos privada y una web propia. 
-									<br /><br />Con una conexi&oacute;n de 100mbps de subida, estable nos permite que el servidor jam&aacute;s se desconecte por razones de interconexiones con el servidor. Adem&aacute;s su rendimiento del servidor utilizando 4 Gb RAM y un procesador
-									de 2x2.2GHz ofrecido por la compa&ntilde;&iacute;a Strato nos permiten que el sistema soporte de forma continua sin generar lag hasta 1,000 jugadores conectados simultaneamente.
-									<br /><br />El equipo de desarrolladores del emulador es un equipo profesional, que a su ves desarrollan la base de datos y con continuas reparaciones que se hacen notar en el servidor
-									y que hacen que la experiencia mejore poco a poco.<br /><br />
-									As&iacute; mismo contamos con un equipo de Staff altamente calificado que ayudar&aacute; a resolver cualquier problema \'in-game\'.<br /><br />
-									<b>&iquest;Qu&eacute; esperas para unirte?</b>');
+	DEFINE('DESCRIPTION', 'Servidor privado del famoso MMORPG World of Warcraft . Contamos con un gran sistema general que permite la estabilidad y calidad');
 ?>
