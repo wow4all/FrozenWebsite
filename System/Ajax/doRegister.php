@@ -1,6 +1,6 @@
 <?php
 /***************************************************************************
- *   Archivo:                     doLogin.php
+ *   Archivo:                     doRegister.php
  *                            -------------------
  *   Proyecto              : FrozenSocial
  *   Inicio                : Septiembre 28, 2011
