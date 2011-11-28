@@ -4,5 +4,5 @@
 	{include file='head.tpl'}
 {* Aquí deberán ir todos los contenidos generales *}
 	{* No disponible aún *}
-{* Archivo de pie de página *}
+{* Archivo de pie de página | Esta inicia en <footer> y termina en </html> *}
 	{include file='footer.tpl'}
