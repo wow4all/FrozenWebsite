@@ -36,13 +36,13 @@
 													<input type="text" name="email2" id="email2" class="inputbox" value="" />
 											</div><br />
 								<label class="label-top" for="sexo">Sexo:</label>
-								<select id="sex" name="sex" style="padding:5px;">
+								<select id="sex" name="sex" style="padding:5px; float: right;">
 									<option value="null">Selecciona el Sexo</option>
 									<option value="Hombre">Hombre</option>
 									<option value="Mujer">Mujer</option>
-								</select><br />
+								</select><br /><br />
 								<label class="label-top" for="fecha_nacimiento">Fecha de Nacimiento:</label>
-									<select id="day" name="day" style="padding:3px;">
+									<select id="day" name="day" style="padding:3px; float: right;">
 										<option value="01">01</option> 
 										<option value="02">02</option> 
 										<option value="03">03</option> 
@@ -75,7 +75,7 @@
 										<option value="30">30</option> 
 										<option value="31">31</option> 
 									</select>
-									<select id="month" name="month" style="padding:3px;">
+									<select id="month" name="month" style="padding:3px; float: right;">
 										<option value="Enero">Enero</option>
 										<option value="Febrero">Febrero</option>
 										<option value="Marzo">Marzo</option>
@@ -89,7 +89,7 @@
 										<option value="Noviembre">Noviembre</option>
 										<option value="Diciembre">Diciembre</option>
 									</select>
-									<select id="year" name="year" style="padding:3px;">
+									<select id="year" name="year" style="padding:3px; float: right;">
 										<option value="1905">1905</option> 
 										<option value="1906">1906</option> 
 										<option value="1907">1907</option> 
@@ -198,10 +198,7 @@
 										<option value="2010">2010</option> 
 										<option value="2011">2011</option> 
 									</select><br />
-											</div>
-											<div>
-
-											</div>
+											</div><br />
 											<div>
 												<label class="label-top" for="descripcion">Cu&eacute;ntanos acerca de ti (M&aacute;ximo 250 caracteres):</label><br />
 													<textarea cols="50" rows="10" name="description" id="descripcion"></textarea>													
