@@ -1,1 +1,1 @@
-<footer>	<p>Pie de p&aacute;gina</p></footer></body></html>
+	<div id="footer">			<div class="inner">				<p>Copyright &copy; 2011 {$server_name}. Powered by <a href="http://frozengaming.com.mx" target=_blank>Frozen Gaming</a></p>			</div>		</div>	</body></html>
