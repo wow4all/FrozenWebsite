@@ -30,10 +30,8 @@
 					require 'indexPage.php';
 			break;
 		case 'registro':
-				if(isset($_GET['page']) && $_GET['page'] == 'registro' && !isset($_COOKIE['u_register:temp:false']))
-					require 'newRegister.php';
-				elseif(isset($_GET['section']) && $_GET['section'] == 2 && isset($_COOKIE['u_register:temp:false']))
-					require 'newRegisterSecondStep.php';
+				if(isset($_GET['page']) && $_GET['page'] == 'registro')
+					require 'Register.php';
 				else
 					require 'noLogin.php';
 			break;
